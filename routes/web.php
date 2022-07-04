@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/quiz/pilihTingkat', 'QuizController@indexTingkat')->name('quiz.tingkat');
+
+Route::get('/quiz/pilihSoal', 'QuizController@indexSoal')->name('quiz.soal');

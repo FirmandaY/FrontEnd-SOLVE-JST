@@ -21,6 +21,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/quizStyle.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="main">
@@ -63,6 +65,7 @@
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->name }}
+                                        <img src="{{ asset('images/Avatar.svg') }}" alt="Avatar" class="avatar">
                                     </a>
 
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -98,7 +101,7 @@
                 </a> 
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href=""> Astronomi </a>
+                    <a class="dropdown-item" href="{{ route('quiz.tingkat') }}"> Astronomi </a>
 
                     <a class="dropdown-item" href="" > Biologi </a>
 
@@ -107,15 +110,19 @@
                 <a class="content-a" href="#"><i class="fa fa-fw fa-history"></i>History</a>
                 <a class="content-a" href="#"><i class="fa fa-fw fa-trophy"></i>Leaderboard</a>
                 <a class="content-a" href="#"><i class="fa fa-fw fa-desktop"></i>Materi</a>
+
+                <div class="mascot-container">
+                    <img class="sidebar-mascot" src="{{ asset('images/SidebarMascot.png') }}">
+                </div>
+
             </div>
             <div class="bar">
                 <a style="font-size:24px;cursor:pointer;color:#fff" onclick="openNav()">&#9776;</a>
             </div>
-            
             <script>
                 function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-                document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("mySidenav").style.width = "190px";
+                document.getElementById("main").style.marginLeft = "180px";
                 }
                 
                 function closeNav() {
