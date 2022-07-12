@@ -4,34 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class QuizController extends Controller
+class MateriController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function indexTingkat()
+    public function indexMateriAwal()
     {
-        return view('Quiz.quizTingkat');
-    }
-
-    public function indexJenisSoal()
-    {
-        return view('Quiz.quizJenisSoal');
-    }
-
-    public function indexSoal()
-    {
-        return view('Quiz.quizSoal');
-    }
-
-    public function indexPembahasan(){
-        return view('Quiz.quizPembahasanSoal');
+        return view('Materi.quizMateri');
     }
 
     /**

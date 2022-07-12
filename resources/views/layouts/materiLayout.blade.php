@@ -21,7 +21,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/quizStyle.css') }}" rel="stylesheet">
     <link href="{{ asset('css/quizMaterial.css') }}" rel="stylesheet">
 
 </head>
@@ -38,14 +37,11 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- SEARCH DILARANG MUNCUL KETIKA BELUM LOGIN -->
-                    @if (Auth::check())
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback"></span>
                         <input type="text" class="form-control" placeholder="Search">
                         
                     </div>
-                    @endif
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
@@ -92,7 +88,6 @@
                 </div>
             </nav>
 
-            <!-- SIDEBAR DILARANG MUNCUL KETIKA BELUM LOGIN -->
             @if(Auth::check())
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" style="font-size:24px;cursor:pointer;color:#fff" class="closebtn content-a" onclick="closeNav()">&#9776;</a>
@@ -139,7 +134,7 @@
             @endif
 
             <main class="py-4">
-                @yield('content')
+                @yield('contentMateri')
             </main>
         </div>
     </div>

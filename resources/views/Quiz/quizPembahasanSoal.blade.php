@@ -11,7 +11,8 @@
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                     <li class="breadcrumb-item"><a href="{{ route('quiz.tingkat') }}">Astronomi</a></li>
                     <li class="breadcrumb-item"><a href="{{ route('quiz.jenis.soal') }}">Tingkat Provinsi</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Soal A</li>
+                    <li class="breadcrumb-item"><a href="{{ route('quiz.soal') }}">Soal A</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Pembahasan Soal</li>
                 </ol>
             </nav>
 
@@ -92,8 +93,8 @@
                 <div class="row">
                     <div class="col-md-8" style="background-color: aqua;">
                         <!-- Container untuk soal-soal Quiz -->
-                        <div class="question-manual" >
-                            <p class="">Pilihlah salah satu jawaban yang Anda anggap tepat dari soal-soal di bawah ini!</p>
+                        <div class="answer-title" >
+                            <p class=""><strong>Review Jawaban</strong></p>
                         </div>
                         <!--TAG <FORM> DIGUNAKAN UNTUK BUTTON PADA SETIAP TOMBOL JAWABAN-->
                         <form type="" action="">
@@ -101,76 +102,73 @@
 
                                 <!-- SETIAP SOAL MEMILIKI ROW SENDIRI-SENDIRI -->
                                 <div class="row quiz-row">
-                                    <div class="col-md-1 quiz-number">
-                                        <p class="">1</p>
-                                    </div>
-                                    <div class="col-md-11 quiz-question">
-                                        <p class="">
-                                            Diketahui suatu fungsi permintaan dinyatakan dengan Qd = 50.000 – 3P dan fungsi
-                                            penawaran Qs = -20.000 + 5P, pemerintah menetapkan pajak sebesar Rp500,00 per unit.
-                                            Berdasarkan data tersebut harga keseimbangan setelah pajak ....
-                                        </p>
+                                    <table class="table table-striped" border="1">
+                                        <tr>
+                                            <thead>
+                                                <td>No</td>
+                                                <td>Soal</td>
+                                                <td>Jawaban</td>
+                                            </thead>
+                                        </tr>
 
-                                        <!--PILIHAN JAWABAN QUIZ MEMILIKI SECTION GRID TERSENDIRI SEPERTI BERIKUT-->
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <!-- <a class="button-option" href="">A</a> -->
-                                                    <button class="button-option">A</button>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <p class="answer-content">8.750</p>
-                                                </div>
-                                            </div>
+                                        <!--SETIAP DATA PADA TABEL-->
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                Diketahui suatu fungsi permintaan dinyatakan dengan Qd = 50.000 – 3P dan fungsi
+                                                penawaran Qs = -20.000 + 5P, pemerintah menetapkan pajak sebesar Rp500,00 per unit.
+                                                Berdasarkan data tersebut harga keseimbangan setelah pajak ....
+                                            </td>
+                                            <td style="width: 50px;">
+                                                <button class="button-option" >A</button> <p>8.750</p>
+                                            </td>
+                                        </tr>
 
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <!-- <a class="" href="">B</a> -->
-                                                    <button class="button-option">B</button>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <p class="answer-content">9.062,5</p>
-                                                </div>
-                                            </div>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                Peranan APBN dalam pembangunan ekonomi berfungsi secara sinergis berperan besar dalam perbaikan 
+                                                dan penguatan fundamental perekonomian.Berikut ini adalah hal-hal yang dapat memperkuat fundamental 
+                                                perekonomian, KECUALI ....
+                                            </td>
+                                            <td>ansewer</td>
+                                        </tr>
 
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <!-- <a class="" href="">C</a> -->
-                                                    <button class="button-option">C</button>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <p class="answer-content">22.812,5</p>
-                                                </div>
-                                            </div>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                A government sets quotas and prints and distributes posters to inspire workers to increase their productivity. 
+                                                In which type of economy would this most likely take place ....
+                                            </td>
+                                            <td>ansewer</td>
+                                        </tr>
 
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <!-- <a class="" href="">D</a> -->
-                                                    <button class="button-option">D</button>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <p class="answer-content">23.750</p>
-                                                </div>
-                                            </div>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                Diketahui suatu fungsi permintaan dinyatakan dengan Qd = 50.000 – 3P dan fungsi
+                                                penawaran Qs = -20.000 + 5P, pemerintah menetapkan pajak sebesar Rp500,00 per unit.
+                                                Berdasarkan data tersebut harga keseimbangan setelah pajak ....
+                                            </td>
+                                            <td style="width: 50px;">
+                                                <button class="button-option" >A</button> <p>8.750</p>
+                                            </td>
+                                        </tr>
 
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <!-- <a class="" href="">E</a> -->
-                                                    <button class="button-option">E</button>
-                                                </div>
-                                                <div class="col-md-10">
-                                                    <p class="answer-content">30.000</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                            Peranan APBN dalam pembangunan ekonomi berfungsi secara sinergis berperan besar dalam perbaikan dan penguatan 
+                                            fundamental perekonomian. Berikut ini adalah hal-hal yang dapat memperkuat fundamental perekonomian, KECUALI ....
+                                            </td>
+                                            <td>ansewer</td>
+                                        </tr>
+
+                                    </table>
                                 </div>
+                                
                             </div>
                         </form>
-
-                        <div class="question-manual" >
-                            <p class="">----------------------------------</p>
-                        </div>
                        
 
                     </div>
@@ -227,7 +225,7 @@
                                 <p>Belum dijawab</p>
                             </div>
 
-                            <a href="{{ route('quiz.pembahasan') }}" class="btn btn-warning submit-button"><strong>Kumpulkan Jawaban</strong></a>
+                            <a href="" class="btn btn-warning submit-button"><strong>Kumpulkan Jawaban</strong></a>
                         </div>
                         
                     </div>
