@@ -22,7 +22,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/quizStyle.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/quizMaterial.css') }}" rel="stylesheet">
 
 </head>
 <body>
