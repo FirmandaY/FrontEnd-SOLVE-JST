@@ -19,26 +19,18 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//ROUTE REGISTER KE API SOLVE
 Route::get('/registerAPI', 'AuthAPIController@createAccount')->name('register.account');
-Route::post('/registerAPI/store', 'AuthAPIController@store')->name('store.account');
+Route::post('/registerAPI/storeRegister', 'AuthAPIController@storeRegister')->name('store.account');
 
-Route::get('/userdetail', function(){
-    $response = Http::withHeaders([
-        'Accept' => 'application/json',
-        'Authorization' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjI3OWJjODRhZGFjY2NlZmExNzUwMzQ5N2Q5N2ZjNmRhOTJjNTJmZTZkNzdiYmZjMzlhNmM1NzAyN2YyZDYxYTFjMjA0MTdmZjdiNWY3MWU1In0.eyJhdWQiOiIzIiwianRpIjoiMjc5YmM4NGFkYWNjY2VmYTE3NTAzNDk3ZDk3ZmM2ZGE5MmM1MmZlNmQ3N2JiZmMzOWE2YzU3MDI3ZjJkNjFhMWMyMDQxN2ZmN2I1ZjcxZTUiLCJpYXQiOjE2NTc1MzIzOTAsIm5iZiI6MTY1NzUzMjM5MCwiZXhwIjoxNjg5MDY4MzkwLCJzdWIiOiIxNjAxIiwic2NvcGVzIjpbXX0.HBukowoesjqhYJoVk8oHPauqchYzO7wHFtPWtHTqr-ITlVPrzDMLvdVVHHGLR6ibA8jAB_6-UIHNlCegJI_b2pRmuYIJ5r9yAGLbI_3xbydgZPujlduN-xUQ45jM46xaTb8zCNXwydD5ogbVV8LZop9PVrIuAY0IZLCL8jDXR6HjSYEiBNDMmJWpT_9XIXfZlDfqiIy_bj8Bk4EJQsraLQaO2JAv5LAkxTxztOtXxqQUJQEg_Hao4sWcC5HT1FPD5iCASq-4b8HBnLUwjBrmXh25bzZQ0ClVra8OFSBZu39O2YUpgg5ciWiRpBNWyMcp1i6dD_mHFbPs6zKvh1HSYJR2xOYZu5kp2fdZCKrPXhN0dQ_q4Kr7Bsz6ebCfShmrjuw21l9VxRMFBejSzVjFaTo5OpzqzQusrSf6aCXikbH5P8KTe00ld7TUvF6YZHgGxQIXiHWCjA4DiA0XpJSuHo-p50uQ2LJTDTWnlzXusMuJniYYJ9mIBHkPYudcWXmqwtV89qypftlayMH5V6u2EG3wa1MSQO1155hIAC8SKtCSl6g_981QvjmX60D8nGo8p7KRFizq0umi1CzTYSX2wC9Qgp57obe3JI3aWpgAt035mTptqTJ0z3doDOhRbl6Kyjfbi5QATKoDsxeUMtcRX6JQgWyvI1_1T2yDV5SQU4I',
-        'Content-Type' => 'application/x-www-form-urlencoded'
-    ])
-    ->get('http://solve.technow.id/api/collager/detail')
-    ->json();
-    
-    dd($response);
-});
+//ROUTE LOGIN KE API SOLVE
+Route::get('/loginAPI', 'AuthAPIController@loginAccount')->name('login.account');
+Route::post('/loginAPI/storeLogin', 'AuthAPIController@storeLogin')->name('store.login');
 
-Route::get('/testing', function(){
-    $response = Http::get('https://newsapi.org/v2/everything?q=game&apiKey=9ee42810f982424cbc8fb13cd90d85e7');
-    $response->json();
-    dd($response);
-});
+//ROUTE FORGOT PASSWORD
+Route::post('/forgotPassword', 'AuthAPIController@forgotPassword')->name('forgotPassword.form');
+Route::post('/forgotPassword/storeForgotenPassword', 'AuthAPIController@storeForgotenPassword')->name('forgotPassword.store');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 

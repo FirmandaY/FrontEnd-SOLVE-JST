@@ -26,7 +26,7 @@
                                                 <div class="button-number"><strong>1</strong></div>
                                             </div>
                                             <div class="col-md-10">
-                                                <p class="course-title"><strong>London knxbhabbahb nxjkaba janxjkan janxa oanxu annxuah kahhx bub</strong></p>
+                                                <p class="course-title"><strong>London : Society, Topography, and Ambiency</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@
                                                 <div class="button-number"><strong>1</strong></div>
                                             </div>
                                             <div class="col-md-10">
-                                                <p><strong>Paris knxbhabbahb nxjkaba janxjkan janxa oanxu annxuah kahhx bub</strong></p>
+                                                <p><strong>Paris : Society, Topography, and Ambiency</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +54,7 @@
                                                 <div class="button-number"><strong>1</strong></div>
                                             </div>
                                             <div class="col-md-10">
-                                                <p><strong>Tokyo knxbhabbahb nxjkaba janxjkan janxa oanxu annxuah kahhx bub</strong></p>
+                                                <p><strong>Tokyo : Society, Topography, and Ambiency</strong></p>
                                             </div>
                                         </div>
                                     </div>
