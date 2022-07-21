@@ -31,11 +31,11 @@
                             <a class="link-landing-page" href="{{ url('/home') }}">Home</a>
                         @else
                             <a class="link-landing-page" href="{{ route('login') }}">Login</a>
-                            <!-- <a class="link-landing-page" href="{{ route('login.account') }}">Login</a> -->
+                           
 
                             @if (Route::has('register'))
                                 <a class="link-landing-page link-active" href="{{ route('register') }}">Register</a>
-                                <!-- <a class="link-landing-page link-active" href="{{ route('register.account') }}">Register</a> -->
+                               
                             @endif
                         @endauth
                     </div>
