@@ -46,11 +46,11 @@
                 </a>
             </div>
 
-            <!-- <div> 
-                {{$user_data_log['user']['token']}} 
-                Password: {{ $user->pass_for_api }}
-                Password: {{ $decryptest }}
-            </div> -->
+            <div> 
+                <!-- {{$user_data_log['user']['token']}} 
+                Password: {{ $user->pass_for_api }} -->
+                
+            </div>
 
             <div class="col-md-12" style="left: 2%; right: 5%;">
                 <div class="row">

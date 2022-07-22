@@ -80,7 +80,7 @@
                                             {{ __('Logout') }}
                                         </a>
 
-                                        <a class="dropdown-item" href="" > My Profile </a>
+                                        <a class="dropdown-item" href="{{ route('profile.index') }}" > My Profile </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf

